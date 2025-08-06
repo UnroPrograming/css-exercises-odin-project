@@ -23,3 +23,39 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+/* SOLUCIÓN */
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.left-links {
+  margin: 8px;
+  flex: 1;
+}
+
+.logo {
+  margin: 8px;
+}
+
+.right-links {
+  margin: 8px;
+  flex: 1;
+  /* Añadimos otro flexbox dentro del flexbox para poder alinearlo al final*/
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  /* Borra el padding a la izquierda por defecto */
+  padding-left: 0px;
+  /* Añadimos otro flexbox dentro del flexbox para los botones*/
+  display: flex;
+}
+
+a {
+  margin: 8px;
+}
+
+
