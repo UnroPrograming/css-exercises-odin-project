@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
+  /*Esto hace que el cuerpo tenga exactamente la misma altura que la ventana gráfica. 
+  Para fijar el pie de página en la parte inferior, deberá usar flex y cambiar la dirección a columna.*/
+  height: 100vh; 
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
@@ -23,4 +25,52 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/* SOLUCIÓN */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+ul {
+  /*Valores por defecto de chrome eliminados*/
+  padding-left: 0;
+  list-style: none;
+  /*Flexbox*/
+  display: flex;
+  gap: 15px;
+  /*Margenes*/
+  margin: 15px;
+}
+
+a {
+  /* this removes the line under the links */
+  text-decoration: none;
+  color: gray;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  padding: 8px 15px;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color:rgb(240, 236, 236);
 }

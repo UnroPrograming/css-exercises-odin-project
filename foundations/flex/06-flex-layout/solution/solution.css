@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+  /*Esto hace que el cuerpo tenga exactamente la misma altura que la ventana gráfica. 
+  Para fijar el pie de página en la parte inferior, deberá usar flex y cambiar la dirección a columna.*/
   height: 100vh;
   margin: 0;
   overflow: hidden;
